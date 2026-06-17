@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeu de devinette</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 60px auto;
+      padding: 0 20px;
+      text-align: center;
+      background-color: #f0f4f8;
+    }
+    h1 { color: #2c3e50; }
+    input[type="number"] {
+      width: 100px;
+      padding: 8px;
+      font-size: 1.2em;
+      text-align: center;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+    }
+    button {
+      margin-left: 10px;
+      padding: 9px 20px;
+      background-color: #2ecc71;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+    button:hover { background-color: #27ae60; }
+    #resultat {
+      margin-top: 25px;
+      font-size: 1.3em;
+      font-weight: bold;
+      min-height: 30px;
+    }
+    #compteur { color: #7f8c8d; margin-top: 10px; }
+  </style>
+</head>
+<body>
+
+  <h1>🎲 Jeu de devinette</h1>
+  <p>J'ai choisi un nombre entre <strong>1</strong> et <strong>100</strong>. Sauras-tu le trouver ?</p>
+
+  <input type="number" id="proposition" min="1" max="100" placeholder="?">
+  <button onclick="verifier()">Valider</button>
+
+  <!-- Ce paragraphe affichera "Trop grand", "Trop petit" ou "Bravo !" -->
+  <p id="resultat"></p>
+  <p id="compteur"></p>
+
+  <script>
+    // Le nombre secret est fixé ici (entre 1 et 100)
+    let nombreSecret = 42;
+    let nombreEssais = 0;
+
+    function verifier() {
+      // TODO 1 : Récupère la valeur saisie dans le champ "proposition"
+      //          et convertis-la en nombre entier avec parseInt().
+      //
+      // Exemple :
+      //   let valeur = parseInt(document.getElementById("proposition").value);
+
+      // TODO 2 : Incrémente le compteur d'essais (nombreEssais = nombreEssais + 1)
+
+      // TODO 3 : Récupère les éléments "resultat" et "compteur" avec getElementById
+
+      // TODO 4 : Écris une condition if / else if / else pour :
+      //   - Si la valeur est plus grande que nombreSecret  → afficher "📉 Trop grand !"
+      //   - Si la valeur est plus petite que nombreSecret  → afficher "📈 Trop petit !"
+      //   - Sinon (c'est le bon nombre)                   → afficher "🎉 Bravo ! Tu as trouvé en X essais !"
+      //     (remplace X par le nombre d'essais)
+    }
+  </script>
+
+</body>
+</html>

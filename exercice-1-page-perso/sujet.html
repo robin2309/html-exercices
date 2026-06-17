@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- TODO 1 : Change le titre de l'onglet avec ton prénom -->
+  <title>Ma page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #f5f5f5;
+    }
+    h1 { color: #2c3e50; }
+    ul { line-height: 2; }
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    button:hover { background-color: #2980b9; }
+    #message { margin-top: 15px; font-weight: bold; color: #e74c3c; }
+  </style>
+</head>
+<body>
+
+  <!-- TODO 2 : Écris ton prénom et ton nom dans le titre principal -->
+  <h1>Bonjour, je m'appelle ...</h1>
+
+  <!-- TODO 3 : Écris une courte présentation de toi (2-3 phrases), stylise-la avec du css  -->
+  <p>...</p>
+
+  <h2>Mes loisirs</h2>
+  <!-- TODO 4 : Ajoute au moins 3 loisirs dans cette liste -->
+  <ul>
+    <li>...</li>
+  </ul>
+
+  <!-- TODO 5 : Remplace l'URL par une vraie image (ou garde celle par défaut) -->
+  <!-- L'attribut "alt" décrit l'image pour les personnes malvoyantes -->
+  <img src="https://via.placeholder.com/200x150" alt="Ma photo" width="200">
+
+  <br>
+
+  <!-- Ce bouton appelle la fonction afficherMessage() quand on clique -->
+  <button onclick="afficherMessage()">Clique ici pour un message secret !</button>
+
+  <!-- Ce paragraphe est vide au départ ; JavaScript va y écrire le message -->
+  <p id="message"></p>
+
+  <script>
+    function afficherMessage() {
+
+    }
+  </script>
+
+</body>
+</html>
